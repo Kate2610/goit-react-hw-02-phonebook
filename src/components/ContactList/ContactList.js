@@ -11,7 +11,7 @@ const ContactList = ({ contacts, onRemoveContact }) => (
           <button
             className={styles.TaskList_button}
             type="button"
-            name="delte"
+            name="delete"
             onClick={() => onRemoveContact(contact.id)}
           >
             delete
@@ -21,6 +21,7 @@ const ContactList = ({ contacts, onRemoveContact }) => (
     ))}
   </ul>
 );
+
 
 ContactList.propTypes = {
   onRemoveContact: PropTypes.func.isRequired,
